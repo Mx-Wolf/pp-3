@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="conv-1c-json.js" type="module"></script> -->
+    <link rel="shortcut icon" type="image/jpg" href="http://www.proximatics.ru/favicon-32x32.png"/>
+    <title>Document</title>
+    <style>
+        table.plat-por{
+            border-collapse: collapse;
+        }
+        table.plat-por td.label{
+            text-align: center;
+        }
+        table.plat-por td.label span{
+            font-size: xx-small;
+            vertical-align: top;
+        }
+        table.plat-por td.underlined{
+            border-bottom: 1px solid black;
+        }      
+        table.plat-por td.left-border{
+            border-left: 1px solid black;
+        }  
+        table.plat-por tr[data-rid="0"] {
+            height: 0.5cm;
+        }
+        table.plat-por tr[data-rid="01"]{
+            height: 0.5cm;
+        }
+        table.plat-por tr[data-rid="1"]{
+            height: 1.0cm;
+        }
+        table.plat-por tr[data-rid="2"]{
+            height: 0.5cm;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="main.js" type="module"></script>
+
+    <h1>LEGACY</h1>
+    <table class="plat-por">
+        <colgroup>
+            <col style="width: 0.5cm;" data-cid="a">
+            <col style="width: 2.0cm;" data-cid="b">
+            <col style="width: 1.5cm;" data-cid="c">
+            <col style="width: 1.0cm;" data-cid="d">
+            <col style="width: 0.5cm;" data-cid="da">
+            <col style="width: 3.5cm;" data-cid="e">
+            <col style="width: 0.5cm;" data-cid="ea">
+            <col style="width: 1.0cm;" data-cid="f">
+            <col style="width: 1.5cm;" data-cid="g">
+            <col style="width: 1.0cm;" data-cid="h">
+            <col style="width: 0.5cm;" data-cid="i">
+            <col style="width: 0.5cm;" data-cid="j">
+            <col style="width: 2.0cm;" data-cid="k">
+            <col style="width: 1.0cm;" data-cid="l">
+            <col style="width: 1.5cm;" data-cid="m">
+            <!-- <col style="width: 1.0cm;" data-cid="n"> -->
+        </colgroup>
+        <tr data-rid="0">
+            <td data-cid="a"><span data-c="a0"></span></td>
+            <td data-cid="b" colspan="2" class="underlined ДатаПоступило" ><span data-c="b0">20.03.2020</span></td>
+            <!-- <td data-cid="c"><span data-c="c0">c0</span></td> -->
+            <td data-cid="d"><span data-c="d0"></span></td>
+            <td data-cid="da" colspan="2" class="underlined ДатаСписано"><span data-c="d0">20.03.2020</span></td>
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <td data-cid="ea"><span data-c="e0"></span></td>
+            <td data-cid="f"><span data-c="f0"></span></td>
+            <td data-cid="g"><span data-c="g0"></span></td>
+            <td data-cid="h"><span data-c="h0"></span></td>
+            <td data-cid="i"><span data-c="i0"></span></td>
+            <td data-cid="j"><span data-c="j0"></span></td>
+            <td data-cid="k"><span data-c="k0"></span></td>
+            <td data-cid="l"><span data-c="l0"></span></td>
+            <td data-cid="m" class="label" style="border: black 1px solid;"><span data-c="m0">0401060</span></td>
+            <!-- <td data-cid="n"><span data-c="n0"></span></td> -->
+        </tr>
+        <tr data-rid="01">
+            <td data-cid="a"><span data-c="a0"></span></td>
+            <td data-cid="b" colspan="2" class="label"><span data-c="b0">поступ. в банк плат.</span></td>
+            <!-- <td data-cid="c"><span data-c="c0">c0</span></td> -->
+            <td data-cid="d"><span data-c="d0"></span></td>
+            <td data-cid="da" colspan="2" class="label"><span data-c="d0" >Списано со сч. плат.</span></td>
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <td data-cid="ea"><span data-c="e0"></span></td>
+            <td data-cid="f"><span data-c="f0"></span></td>
+            <td data-cid="g"><span data-c="g0"></span></td>
+            <td data-cid="h"><span data-c="h0"></span></td>
+            <td data-cid="i"><span data-c="i0"></span></td>
+            <td data-cid="j"><span data-c="j0"></span></td>
+            <td data-cid="k"><span data-c="k0"></span></td>
+            <td data-cid="l"><span data-c="l0"></span></td>
+            <td data-cid="m"><span data-c="m0"></span></td>
+            <!-- <td data-cid="n"><span data-c="n0"></span></td> -->
+        </tr>
+        <tr data-rid="1">
+            <td data-cid="a" colspan="4"><span data-c="a0">Платежное поручение №</span></td>
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <!-- <td data-cid="c"><span data-c="c0">c0</span></td> -->
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <td data-cid="da"><span data-c="d0" class="Номер">221</span></td>
+            <td data-cid="e"><span data-c="e0"></span></td>
+            <td data-cid="ea"><span data-c="e0"></span></td>
+            <td data-cid="f" colspan="3" class="underlined"><span data-c="f0" class="Дата">20.03.2020</span></td>
+            <!-- <td data-cid="g"><span data-c="g0">g0</span></td> -->
+            <!-- <td data-cid="h"><span data-c="h0">h0</span></td> -->
+            <td data-cid="i"><span data-c="i0"></span></td>
+            <td data-cid="j"  colspan="3" class="underlined"><span data-c="j0" class="ВидПлатежа">электронно</span></td>
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <td data-cid="m"><span data-c="m0"></span></td>
+            <!-- <td data-cid="n"><span data-c="n0"></span></td> -->
+        </tr>
+        <tr data-rid="2" style="height: 0.5cm;">
+            <td data-cid="a"><span data-c="a0"></span></td>
+            <td data-cid="b"><span data-c="b0"></span></td>
+            <td data-cid="c"><span data-c="c0"></span></td>
+            <td data-cid="d"><span data-c="d0"></span></td>
+            <td data-cid="da"><span data-c="d0"></span></td>
+            <td data-cid="e"><span data-c="e0"></span></td>
+            <td data-cid="ea"><span data-c="e0"></span></td>
+            <td data-cid="f" colspan="3" class="label"><span data-c="f0">дата</span></td>
+            <!-- <td data-cid="g"><span data-c="g0">g0</span></td> -->
+            <!-- <td data-cid="h"><span data-c="h0">h0</span></td> -->
+            <td data-cid="i"><span data-c="i0"></span></td>
+            <td data-cid="j" colspan="3" class="label"><span data-c="j0">Вид платежа</span></td>
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <td data-cid="m"><span data-c="m0"></span></td>
+            <td data-cid="n"><span data-c="n0"></span></td>
+        </tr>
+        <tr data-rid="3" style="height: 1.5cm;">
+            <td data-cid="a" colspan="2" class="label underlined"><span data-c="a0">Сумма прописью</span></td>
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <td data-cid="c" colspan="13" class="underlined left-border"><span data-c="c0" class="spelled-out">Один миллион двести сорок семь тысяч двадцать два рубля 42 коп.</span></td>
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <!-- <td data-cid="ea"><span data-c="e0">ea0</span></td> -->
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <!-- <td data-cid="g"><span data-c="g0">g0</span></td> -->
+            <!-- <td data-cid="h"><span data-c="h0">h0</span></td> -->
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0"></span></td> -->
+        </tr>
+        <tr data-rid="4">
+            <td data-cid="a" colspan="4"><span data-c="a0">ИНН</span><span class="ПлательщикИНН">5260205538</span></td>
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <!-- <td data-cid="c"><span data-c="c0">c0</span></td> -->
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <td data-cid="da" colspan="4"><span>КПП</span><span class="ПлательщикКПП">526001001</span></td>
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <!-- <td data-cid="ea"><span data-c="e0">ea0</span></td> -->
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <td data-cid="g" class="left-border label underlined" rowspan="2"><span data-c="g0">Сумма</span></td>
+            <td data-cid="h" colspan="6" class="left-border underlined" rowspan="2"><span data-c="h0">1&nbsp;247&nbsp;022.00</span></td>
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <td data-cid="n"><span data-c="n0"></span></td>
+        </tr>
+        <tr data-rid="41">
+            <td data-cid="a" colspan="8" rowspan="2"><span data-c="a0">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ПРОМТЕХСЕРВИС"</span></td>
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <!-- <td data-cid="c"><span data-c="c0">c0</span></td> -->
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <!-- <td data-cid="ea"><span data-c="e0">ea0</span></td> -->
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <!-- <td data-cid="g" class="left-border underlined"><span data-c="g0"></span></td> -->
+            <!-- <td data-cid="h" colspan="6" class="left-border underlined"><span data-c="h0"></span></td> -->
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0"></span></td> -->
+        </tr>
+        <tr data-rid="5">
+            <!-- <td data-cid="a"><span data-c="a0">a0</span></td> -->
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <!-- <td data-cid="c"><span data-c="c0">c0</span></td> -->
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <!-- <td data-cid="ea"><span data-c="e0">ea0</span></td> -->
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <td data-cid="g" class="left-border label underlined" rowspan="2" ><span data-c="g0">сч. №</span></td>
+            <td data-cid="h" colspan="6" class="left-border underlined" rowspan="2"><span data-c="h0" class="ПлательщикРасчСчет">40702810029050005827</span></td>
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0"></span></td> -->
+        </tr>
+        <tr data-rid="6">
+            <td data-cid="a" colspan="2" class="underlined label"><span data-c="a0">Плательщик</span></td>
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <td data-cid="c" colspan="6" class="underlined"><span data-c="c0"></span></td>
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <!-- <td data-cid="ea"><span data-c="e0">ea0</span></td> -->
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <!-- <td data-cid="g"><span data-c="g0">g0</span></td> -->
+            <!-- <td data-cid="h"><span data-c="h0">h0</span></td> -->
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <td data-cid="n"><span data-c="n0"></span></td>
+        </tr>
+        <tr data-rid="7">
+            <td data-cid="a" rowspan="2" colspan="8"><span data-c="a0" class="ПлательщикБанк1">ФИЛИАЛ "НИЖЕГОРОДСКИЙ" АО "АЛЬФА-БАНК" г. Нижний Новгород</span></td>
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <!-- <td data-cid="c"><span data-c="c0">c0</span></td> -->
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <!-- <td data-cid="ea"><span data-c="e0">ea0</span></td> -->
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <td data-cid="g" class="left-border underlined label"><span data-c="g0">БИК</span></td>
+            <td data-cid="h" colspan="6" class="left-border"><span data-c="h0" class="ПлательщикБИК">042202824</span></td>
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0">m0</span></td> -->
+        </tr>
+        <tr data-rid="8">
+            <!-- <td data-cid="a"><span data-c="a0">a0</span></td> -->
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <!-- <td data-cid="c"><span data-c="c0">c0</span></td> -->
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <!-- <td data-cid="ea"><span data-c="e0">ea0</span></td> -->
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <td data-cid="g" rowspan="2" class="left-border underlined label"><span data-c="g0">сч. №</span></td>
+            <td data-cid="h" rowspan="2" colspan="6" class="left-border underlined"><span data-c="h0" class="ПлательщикКорсчет">30101810200000000824</span></td>
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0">m0</span></td> -->
+        </tr>
+        <tr data-rid="9">
+            <td data-cid="a" colspan="2" class="label underlined"><span data-c="a0">Банк плательщика</span></td>
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <td data-cid="c" colspan="6" class="underlined"><span data-c="c0"></span></td>
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <!-- <td data-cid="ea"><span data-c="e0">ea0</span></td> -->
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <!-- <td data-cid="g"><span data-c="g0">g0</span></td> -->
+            <!-- <td data-cid="h"><span data-c="h0">h0</span></td> -->
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0">m0</span></td> -->
+        </tr>
+        <tr data-rid="10">
+            <td data-cid="a" colspan="8" rowspan="2"><span data-c="a0" class="ПолучательБанк1">АО "РАЙФФАЙЗЕНБАНК" г. Москва</span></td>
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <!-- <td data-cid="c"><span data-c="c0">c0</span></td> -->
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <!-- <td data-cid="ea"><span data-c="e0">ea0</span></td> -->
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <td data-cid="g" class="underlined left-border label"><span data-c="g0">БИК</span></td>
+            <td data-cid="h" class="left-border" colspan="6"><span data-c="h0" class="ПолучательБИК">044525700</span></td>
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0">m0</span></td> -->
+        </tr>
+        <tr data-rid="11">
+            <!-- <td data-cid="a"><span data-c="a0">Банк получателя</span></td> -->
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <!-- <td data-cid="c"><span data-c="c0">c0</span></td> -->
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <!-- <td data-cid="ea"><span data-c="e0">ea0</span></td> -->
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <td data-cid="g" rowspan="2" class="left-border underlined label"><span data-c="g0" >Сч. №</span></td>
+            <td data-cid="h" rowspan="2" colspan="6" class="left-border underlined"><span data-c="h0" class="ПолучательКорсчет">30101810200000000700</span></td>
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0">m0</span></td> -->
+        </tr>
+        <tr data-rid="12">
+            <td data-cid="a" colspan="2" class="label underlined"><span data-c="a0">Банк получателя</span></td>
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <td data-cid="c" colspan="6" class="underlined"><span data-c="c0"></span></td>
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <!-- <td data-cid="ea"><span data-c="e0">ea0</span></td> -->
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <!-- <td data-cid="g"><span data-c="g0">g0</span></td> -->
+            <!-- <td data-cid="h"><span data-c="h0">h0</span></td> -->
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0">m0</span></td> -->
+        </tr>
+        <tr data-rid="13">
+            <td data-cid="a" colspan="4"><span data-c="a0">ИНН</span><span class="ПолучательИНН">7714382510</span></td>
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <!-- <td data-cid="c"><span data-c="c0">c0</span></td> -->
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <td data-cid="da" colspan="4"><span data-c="d0" >КПП</span><span class="ПолучательКПП">771401001</span></td>
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <!-- <td data-cid="ea"><span data-c="e0">ea0</span></td> -->
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <td data-cid="g" rowspan="2" class="left-border label underlined"><span data-c="g0">Сч. №</span></td>
+            <td data-cid="h" rowspan="2" colspan="6" class="left-border underlined"><span data-c="h0" class="ПолучательРасчСчет">40702810200000018299</span></td>
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0">m0</span></td> -->
+        </tr>
+        <tr data-rid="14">
+            <td data-cid="a" rowspan="3" colspan="8"><span data-c="a0" class="Получатель">ООО "РАДИОТЕХ"</span></td>
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <!-- <td data-cid="c"><span data-c="c0">c0</span></td> -->
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <!-- <td data-cid="ea"><span data-c="e0">ea0</span></td> -->
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <!-- <td data-cid="g"><span data-c="g0">g0</span></td> -->
+            <!-- <td data-cid="h"><span data-c="h0">h0</span></td> -->
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0">m0</span></td> -->
+        </tr>
+        <tr data-rid="15">
+            <!-- <td data-cid="a"><span data-c="a0">a0</span></td> -->
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <!-- <td data-cid="c"><span data-c="c0">c0</span></td> -->
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <!-- <td data-cid="ea"><span data-c="e0">ea0</span></td> -->
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <td data-cid="g" class="left-border underlined label"><span data-c="g0">вид оп.</span></td>
+            <td data-cid="h" colspan="3" class="left-border "><span data-c="h0" class="ВидОплаты">01</span></td>
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <td data-cid="k" class="left-border underlined label"><span data-c="k0">Срок платежа</span></td>
+            <td data-cid="l" colspan="2" class="left-border "><span data-c="l0" class="СрокПлатежа"></span></td>
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0">m0</span></td> -->
+        </tr>
+        <tr data-rid="16">
+            <!-- <td data-cid="a"><span data-c="a0">a0</span></td> -->
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <!-- <td data-cid="c"><span data-c="c0">c0</span></td> -->
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <!-- <td data-cid="ea"><span data-c="e0">ea0</span></td> -->
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <td data-cid="g" class=" left-border underlined label"><span data-c="g0">Наз. пл.</span></td>
+            <td data-cid="h" colspan="3" class="left-border"><span data-c="h0"></span></td>
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <td data-cid="k" class="left-border underlined label"><span data-c="k0">Очер. плат.</span></td>
+            <td data-cid="l" colspan="2" class="left-border"><span data-c="l0" class="Очередность">5</span></td>
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0">m0</span></td> -->
+        </tr>
+        <tr data-rid="17">
+            <td data-cid="a" colspan="2" class="underlined label"><span data-c="a0">Получатель</span></td>
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <td data-cid="c" colspan="6" class="underlined"><span data-c="c0"></span></td>
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <!-- <td data-cid="ea"><span data-c="e0">ea0</span></td> -->
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <td data-cid="g" class="left-border underlined label"><span data-c="g0">Код</span></td>
+            <td data-cid="h" colspan="3" class="left-border underlined"><span data-c="h0" class="Код">0</span></td>
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <td data-cid="k" class="left-border underlined label"><span data-c="k0">Рез. поле</span></td>
+            <td data-cid="l" colspan="2" class="left-border underlined"><span data-c="l0"></span></td>
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0">m0</span></td> -->
+        </tr>
+        <tr data-rid="18"  >
+            <td data-cid="a" colspan="5" class="underlined"><span data-c="a0">182102020010611010160</span></td>
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <!-- <td data-cid="c"><span data-c="c0"></span></td> -->
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <td data-cid="e" class="left-border"><span data-c="e0">45888307</span></td>
+            <td data-cid="ea" colspan="2" class="left-border"><span data-c="e0">ТП</span></td>
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <td data-cid="g" class="left-border"><span data-c="g0">MC.05.2017</span></td>
+            <td data-cid="h" colspan="3" class="left-border"><span data-c="h0">0</span></td>
+            <!-- <td data-cid="i" class="left-border"><span data-c="i0">0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <td data-cid="k" class="left-border"><span data-c="k0">0</span></td>
+            <td data-cid="l" colspan="2" class="left-border"><span data-c="l0"></span></td>
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0">m0</span></td> -->
+        </tr>
+        <tr data-rid="19"  style="height: 2.0cm;">
+            <td data-cid="a" colspan="15"><span data-c="a0" class="НазначениеПлатежа">Оплата по сч.EX005225 от 06.04.2020г. за Разъем. В том числе НДС (20%), 166.67 руб.</span></td>
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <!-- <td data-cid="c"><span data-c="c0"></span></td> -->
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <!-- <td data-cid="ea"><span data-c="e0">ea0</span></td> -->
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <!-- <td data-cid="g"><span data-c="g0">g0</span></td> -->
+            <!-- <td data-cid="h"><span data-c="h0">h0</span></td> -->
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0">m0</span></td> -->
+        </tr>
+        <tr data-rid="20">
+            <td data-cid="a" colspan="2" class="underlined label" ><span data-c="a0">Назначение платежа</span></td>
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <td data-cid="c" colspan="13" class="underlined"><span data-c="c0"></span></td>
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <!-- <td data-cid="ea"><span data-c="e0">ea0</span></td> -->
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <!-- <td data-cid="g"><span data-c="g0">g0</span></td> -->
+            <!-- <td data-cid="h"><span data-c="h0">h0</span></td> -->
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0">m0</span></td> -->
+        </tr>
+        <tr data-rid="21">
+            <td data-cid="a" rowspan="3" colspan="6" class="label"><span data-c="a0">м.п.</span></td>
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <!-- <td data-cid="c"><span data-c="c0"></span></td> -->
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <td data-cid="ea" colspan="5" class="label"><span data-c="e0">подписи</span></td>
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <!-- <td data-cid="g"><span data-c="g0">g0</span></td> -->
+            <!-- <td data-cid="h"><span data-c="h0">h0</span></td> -->
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <td data-cid="j" colspan="4" rowspan="3" class="label"><span data-c="j0">отметки банка</span></td>
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0">m0</span></td> -->
+        </tr>
+        <tr data-rid="22" style="height: 2.0cm;">
+            <!-- <td data-cid="a" ><span data-c="a0"></span></td> -->
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <!-- <td data-cid="c"><span data-c="c0"></span></td> -->
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <td data-cid="ea" class="underlined" colspan="5"><span data-c="e0"></span></td>
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <!-- <td data-cid="g"><span data-c="g0">g0</span></td> -->
+            <!-- <td data-cid="h"><span data-c="h0">h0</span></td> -->
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0">m0</span></td> -->
+        </tr>
+        <tr data-rid="13" style="height: 2.0cm;">
+            <!-- <td data-cid="a" ><span data-c="a0"></span></td> -->
+            <!-- <td data-cid="b"><span data-c="b0">b0</span></td> -->
+            <!-- <td data-cid="c"><span data-c="c0"></span></td> -->
+            <!-- <td data-cid="d"><span data-c="d0">d0</span></td> -->
+            <!-- <td data-cid="da"><span data-c="d0">da0</span></td> -->
+            <!-- <td data-cid="e"><span data-c="e0">e0</span></td> -->
+            <td data-cid="ea" class="underlined" colspan="5"><span data-c="e0"></span></td>
+            <!-- <td data-cid="f"><span data-c="f0">f0</span></td> -->
+            <!-- <td data-cid="g"><span data-c="g0">g0</span></td> -->
+            <!-- <td data-cid="h"><span data-c="h0">h0</span></td> -->
+            <!-- <td data-cid="i"><span data-c="i0">i0</span></td> -->
+            <!-- <td data-cid="j"><span data-c="j0">j0</span></td> -->
+            <!-- <td data-cid="k"><span data-c="k0">k0</span></td> -->
+            <!-- <td data-cid="l"><span data-c="l0">l0</span></td> -->
+            <!-- <td data-cid="m"><span data-c="m0">m0</span></td> -->
+            <!-- <td data-cid="n"><span data-c="n0">m0</span></td> -->
+        </tr>
+    </table>
+</body>
+
+</html>

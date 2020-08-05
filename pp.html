@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/jpg" href="http://www.proximatics.ru/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/default.min.css">
+    <script crossorigin charset="UTF-8"
+        src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+    <pre><code class="sql">
+    SELECT FirstName + ' ' + LastName FROM Clients;
+</code></pre>
+
+    <pre><code class="html"></code></pre>
+
+    <form>
+        <select name="bev" size="3">
+            <option value="0">--choose one--</option>
+            <option value="1">Jugo de naranja</option>
+            <option value="2">Té verde</option>
+        </select>
+    </form>
+    <script>
+document.forms[0].bev.options[0].style.backgroundColor = "#EEEEEE";
+document.forms[0].bev.options[0].style.color = "#A0A0A0"
+document.forms[0].bev.options[1].style.backgroundColor = "	#ffd485";
+document.forms[0].bev.options[1].style.color = "#f77f00";
+document.forms[0].bev.options[2].style.backgroundColor = "#66cdaa";
+document.forms[0].bev.options[2].style.color = "#228b22";
+    </script>
+    <form>
+        <select name="bev" size="3">
+            <option value="0">--choose one--</option>
+            <option value="1">Jugo de naranja</option>
+            <option value="2">Té verde</option>
+        </select>
+    </form>
+    <script>
+        with (document.forms[1].bev) {
+            options[0].style.backgroundColor = "#EEEEEE";
+            options[0].style.color = "#A0A0A0"
+            options[1].style.backgroundColor = "#ffd485";
+            options[1].style.color = "#f77f00";
+            options[2].style.backgroundColor = "#66cdaa";
+            options[2].style.color = "#228b22";
+        }
+    </script>
+    <script>
+        function withBugs(context, value){
+            with(context){
+                return 2*value; 
+            }
+        }
+        console.log(withBugs({},3));
+        console.log(withBugs({value:4},3));
+    </script>
+    <div id="countdown"></div>
+<script>    
+
+    function display(){
+        const now = new Date().valueOf();
+        const left = target - now;
+        if(left<=0){return "too late";}
+        const ts = Math.floor(left/1000)%60;
+        const tm = Math.floor(left/60000)%60;
+        const th = Math.floor(left/3600000)%24;
+        const td = Math.floor(left/86400000);
+        countdown.innerText = `${td} days, ${th} hours, ${tm} minutes, ${ts} seconds`;
+    }
+
+    const countdown = document.getElementById("countdown");
+    const y = new Date().getFullYear();
+    const target = new Date(y+1,0,1).valueOf();
+
+    display();
+
+    setInterval(display,300);
+
+</script>
+
+    </div>
+</body>
+
+</html>
