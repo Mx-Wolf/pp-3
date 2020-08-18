@@ -3,6 +3,8 @@ import { CbrPpProps, CbrPp } from "mx-wolf-cbr-pp";
 import { StateInfo } from "./state-info";
 import { getStateInfo } from "./get-state-info";
 import { getUserAutorization } from "./get-user-authorization";
+import { getPpOneEsFile } from "./get-pp-one-es-file";
+import { amoutSpelledOut } from "mx-wolf-amount-spelled-out"
 
 const ppInit = undefined as (Partial<CbrPpProps> | undefined);
 
@@ -18,6 +20,9 @@ export const PpContoller: React.FC = () => {
   const { СуммаПрописью: sp, Сумма: s } = typeof pp === "undefined" ? { СуммаПрописью: undefined, Сумма: undefined } : pp;
 
   React.useEffect(() => {
+    if (err.length > 0) {
+      return;
+    }
     if (typeof si === "undefined") {
       setSi(getStateInfo(search));
       return;
@@ -29,13 +34,21 @@ export const PpContoller: React.FC = () => {
         .catch((err) => setErr(err.message));
       return;
     }
-    if (err.length > 0) {
-      return;
-    }
     if (typeof pp === "undefined") {
+      const { attachmentDataId } = si;
+      getPpOneEsFile(attachmentDataId, at)
+        .then((txt) => {
+          setPp(txt);
+        })
+        .catch((err) => setErr(err));
       return;
     }
     if (typeof sp === "undefined") {
+      try {
+        setPp({ ...pp, СуммаПрописью: amoutSpelledOut(Number(s)) })
+      } catch (err) {
+        setErr(err);
+      }
       return;
     }
     return;

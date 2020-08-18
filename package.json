@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "mx-wolf-amount-spelled-out": "^1.0.0",
-    "mx-wolf-cbr-pp": "^1.0.1",
+    "mx-wolf-cbr-pp": "^1.0.2",
     "oidc-client": "^1.10.1"
   }
 }
